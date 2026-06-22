@@ -337,16 +337,16 @@
       prize.textContent = 'Главна награда — совршено!';
     } else if (abs <= 50) {
       timer.className = 'timer win'; prize.className = 'result-prize';
-      prize.textContent = '20% попуст';
+      prize.textContent = '40% попуст';
     } else if (abs <= 200) {
       timer.className = 'timer close'; prize.className = 'result-prize';
-      prize.textContent = '10% попуст';
+      prize.textContent = '20% попуст';
     } else if (abs <= 500) {
       timer.className = 'timer miss'; prize.className = 'result-prize dim';
-      prize.textContent = 'Бесплатно чистење на часовник';
+      prize.textContent = '10% попуст';
     } else {
       timer.className = 'timer miss'; prize.className = 'result-prize dim';
-      prize.textContent = 'Нема награда — пробај пак!';
+      prize.textContent = 'Нема награда,пробај пак!';
     }
     wrap.classList.add('show');
   }
